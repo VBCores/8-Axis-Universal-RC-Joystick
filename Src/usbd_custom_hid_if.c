@@ -102,25 +102,27 @@ __ALIGN_BEGIN static uint8_t CUSTOM_HID_ReportDesc_FS[USBD_CUSTOM_HID_REPORT_DES
   0x09, 0x33,        //     Usage (Rx)
   0x09, 0x34,        //     Usage (Ry)
   0x09, 0x35,        //     Usage (Rz)
+  0x09, 0x36,        //     Usage (Slider)
+  0x09, 0x37,        //     Usage (Dial)
   0x15, 0x00,        //     Logical Minimum (0)
   0x26, 0xFF, 0x7F,  //     Logical Maximum (32767)
   0x75, 0x10,        //     Report Size (16)
-  0x95, 0x06,        //     Report Count (6)
+  0x95, 0x08,        //     Report Count (8)
   0x81, 0x02,        //     Input (Data,Var,Abs,No Wrap,Linear,Preferred State,No Null Position)
   0x05, 0x09,        //     Usage Page (Button)
   0x19, 0x01,        //     Usage Minimum (0x01)
-  0x29, 0x04,        //     Usage Maximum (0x04)
+  0x29, 0x01,        //     Usage Maximum (0x01)
   0x15, 0x00,        //     Logical Minimum (0)
   0x25, 0x01,        //     Logical Maximum (1)
   0x75, 0x01,        //     Report Size (1)
-  0x95, 0x04,        //     Report Count (4)
+  0x95, 0x01,        //     Report Count (1)
   0x81, 0x02,        //     Input (Data,Var,Abs,No Wrap,Linear,Preferred State,No Null Position)
-  0x75, 0x04,        //     Report Size (4) // padding to full byte
+  0x75, 0x07,        //     Report Size (7) // padding to full byte
   0x95, 0x01,        //     Report Count (1)
   0x81, 0x01,        //     Input (Const,Array,Abs,No Wrap,Linear,Preferred State,No Null Position)
   0xC0,              //   End Collection
 
-  // 57 bytes
+  // 61 bytes
 
   /* USER CODE END 0 */
   0xC0    /*     END_COLLECTION	             */

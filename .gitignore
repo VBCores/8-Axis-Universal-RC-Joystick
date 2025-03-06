@@ -1,2 +1,10 @@
 .pio
 .vscode
+
+!EWARM/
+EWARM/*
+!EWARM/*.ewp
+!EWARM/*.eww
+
+Drivers/
+Middlewares/
